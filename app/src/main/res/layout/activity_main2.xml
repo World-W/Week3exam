@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EB3323"
+    android:layout_height="match_parent"
+    tools:context=".activity.Main2Activity">
+    <ImageView
+        android:layout_width="@dimen/dp70"
+        android:layout_height="@dimen/dp75"
+        android:id="@+id/iv"
+        android:src="@mipmap/dog"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="京东"
+        android:layout_toRightOf="@id/iv"
+        android:textColor="#fff"
+        android:textSize="@dimen/dp25"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp40"/>
+  <ImageView
+      android:layout_width="@dimen/dp100"
+      android:layout_height="@dimen/dp100"
+      android:layout_centerHorizontal="true"
+      android:id="@+id/iv2"
+      android:layout_marginTop="@dimen/dp80"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv2"
+        android:layout_centerHorizontal="true"
+        android:text="dc_uG2UI"
+        android:id="@+id/tv5"
+        android:textSize="18sp"
+        android:textColor="#fff"/>
+
+    <com.example.wangshjie20200309.customview.CustomView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zhexian="@color/colorAccent"
+        android:layout_below="@id/tv5"/>
+
+</RelativeLayout>
